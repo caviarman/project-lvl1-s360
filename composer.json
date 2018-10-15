@@ -1,7 +1,7 @@
 {
     "name": "vilin/brain-games",
     "version": "1.0.0",
-    "license": "ISC",
+    "license": "MIT",
     "bin": ["bin/brain-games"],
     "type": "library",
     "description": "set of cli games",
@@ -11,22 +11,11 @@
             "email": "mark09072010@gmail.com"
         }
     ],
-    "scripts": {
-        "phpcs": "phpcs",
-        "phpcbf": "phpcbf",
-        "phpunit": "phpunit",
-        "test": "phpunit tests"
-      },
     "autoload": {
-        "psr-4": {
-            "Project\\Lvl1\\S360\\": "src",
-            "Project\\Lvl1\\S360\\Tests\\": "tests"
-        }
-      },
+        "files": ["src/Cli.php"]
+    },
     "require": {
-        "tightenco/collect": "^5.6",
-        "nesbot/carbon": "^1.33",
-        "danielstjules/stringy": "^3.1"
+        "wp-cli/php-cli-tools": "^0.11.10"
       },
     "require-dev": {
         "symfony/var-dumper": "^4.0",
@@ -36,4 +25,3 @@
         "phploc/phploc": "^4.0"
     }
 }
-

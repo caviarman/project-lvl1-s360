@@ -10,4 +10,4 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-print_r("Welcome to the Brain Games!\n");
+BrainGames\Cli\run();
