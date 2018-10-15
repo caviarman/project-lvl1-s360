@@ -26,7 +26,7 @@ function run()
             line('Correct!');
             $count += 1;
         } else {
-            line("${$answer} is wrong answer ;(. Correct answer was {$rightAnswer}.");
+            line("{$answer} is wrong answer ;(. Correct answer was {$rightAnswer}.");
             line("Let's try again, {$name}");
             return;
         }
