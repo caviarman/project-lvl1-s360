@@ -11,5 +11,4 @@ function game()
         $question = rand(1, 100);
         $answer = isEven($question);
         return ['question' => $question, 'answer' => $answer];
-     
 }
