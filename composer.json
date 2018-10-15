@@ -1,0 +1,11 @@
+{
+    "name": "vilin/brain-games",
+    "description": "set of cli games",
+    "authors": [
+        {
+            "name": "Vladimir Ilin",
+            "email": "mark09072010@gmail.com"
+        }
+    ],
+    "require": {}
+}
