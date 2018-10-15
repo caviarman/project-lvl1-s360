@@ -1,6 +1,9 @@
 {
     "name": "vilin/brain-games",
+    "version": "1.0.0",
+    "license": "ISC",
     "bin": ["bin/brain-games"],
+    "type": "library",
     "description": "set of cli games",
     "authors": [
         {
