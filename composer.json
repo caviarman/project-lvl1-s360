@@ -1,9 +1,12 @@
 {
     "name": "vilin/brain-games",
-    "version": "2.1.0",
+    "version": "2.2.1",
     "license": "MIT",
-    "bin": ["bin/brain-games"],
-    "type": "library",
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
+    "type": "project",
     "description": "set of cli games",
     "authors": [
         {
@@ -11,11 +14,19 @@
             "email": "mark09072010@gmail.com"
         }
     ],
+    "keywords": [
+        "brain-games",
+        "hexlet-project",
+        "cli game"
+    ],
     "scripts": {
         "phpcs": "phpcs"
     },
     "autoload": {
-        "files": ["src/Cli.php"]
+        "files": [
+            "src/Cli.php",
+            "src/games/Even.php"
+        ]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.10"
