@@ -4,7 +4,8 @@
     "license": "MIT",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "project",
     "description": "set of cli games",
@@ -25,7 +26,8 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/games/Even.php"
+            "src/games/Even.php",
+            "src/games/Calc.php"
         ]
     },
     "require": {

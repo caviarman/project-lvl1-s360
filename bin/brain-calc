@@ -10,7 +10,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 $game = function() {
-    return \BrainGames\Games\Even\game();
+    return \BrainGames\Games\Calc\game();
 };
-$description = 'Answer "yes" if number even otherwise answer "no".';
+$description = 'What is the result of the expression?';
 \BrainGames\Cli\run($game, $description);
