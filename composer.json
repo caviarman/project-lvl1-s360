@@ -1,6 +1,6 @@
 {
     "name": "vilin/brain-games",
-    "version": "2.2.1",
+    "version": "4.0.0",
     "license": "MIT",
     "bin": [
         "bin/brain-games",
