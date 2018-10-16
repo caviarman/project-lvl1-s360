@@ -15,14 +15,12 @@ function getData()
         return [
             'question' => $question,
             'answer' => $answer,
-            'description' => 'Answer "yes" if number even otherwise answer "no".'
         ];
 }
-
 
 function game()
 {
     return run(function () {
         return getData();
-    });
+    }, 'Answer "yes" if number even otherwise answer "no".');
 }
