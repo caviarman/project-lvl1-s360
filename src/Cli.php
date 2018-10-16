@@ -7,16 +7,18 @@ use function \cli\prompt;
 
 const ATTEMPTS = 3;
 
-function run($game, $description)
+function run($game)
 {
     line('Welcome to the Brain Game!');
+    $data = $game();
+    $description = $data['description'];
     print_r("{$description}\n");
     $name = prompt('May I have your name?');
     $count = 0;
     while ($count < ATTEMPTS) {
-        $result = $game();
-        $question = $result['question'];
-        $rightAnswer = $result['answer'];
+        $gameData = $game();
+        $question = $gameData['question'];
+        $rightAnswer = $gameData['answer'];
         $userAnswer = prompt("Question: {$question}");
         line("Your answer: {$userAnswer}");
         

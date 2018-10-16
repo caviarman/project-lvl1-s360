@@ -12,5 +12,5 @@ if (file_exists($autoloadPath1)) {
 $game = function () {
     return \BrainGames\Games\Even\game();
 };
-$description = 'Answer "yes" if number even otherwise answer "no".';
-\BrainGames\Cli\run($game, $description);
+
+\BrainGames\Cli\run($game);

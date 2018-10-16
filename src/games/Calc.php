@@ -24,5 +24,9 @@ function game()
         default:
             break;
     }
-        return ['question' => $question, 'answer' => (string)$answer];
+        return [
+            'question' => $question,
+            'answer' => (string)$answer,
+            'description' => 'What is the result of the expression?'
+        ];
 }

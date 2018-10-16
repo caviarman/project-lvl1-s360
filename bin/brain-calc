@@ -12,5 +12,4 @@ if (file_exists($autoloadPath1)) {
 $game = function () {
     return \BrainGames\Games\Calc\game();
 };
-$description = 'What is the result of the expression?';
-\BrainGames\Cli\run($game, $description);
+\BrainGames\Cli\run($game);
