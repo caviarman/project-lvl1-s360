@@ -6,7 +6,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-balance"
     ],
     "type": "project",
     "description": "set of cli games",
@@ -29,7 +30,8 @@
             "src/Cli.php",
             "src/games/Even.php",
             "src/games/Calc.php",
-            "src/games/Gcd.php"
+            "src/games/Gcd.php",
+            "src/games/Balance.php"
         ]
     },
     "require": {

@@ -4,6 +4,7 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Cli\run;
 
+const DESCRIPTION = 'What is the result of the expression?';
 const OPERATORS = ['+', '-', '*'];
 
 function getData()
@@ -32,9 +33,12 @@ function getData()
         'answer' => (string)$answer
     ];
 }
+
+
 function game()
 {
-    return run(function () {
+    $calcGame = function () {
         return getData();
-    }, 'What is the result of the expression?');
+    };
+    return run($calcGame, DESCRIPTION);
 }
