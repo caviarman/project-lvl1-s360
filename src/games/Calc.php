@@ -30,7 +30,7 @@ function getData()
     return [
        'question' => $question,
         'answer' => (string)$answer
-        ];
+    ];
 }
 function game()
 {
