@@ -2,8 +2,10 @@
 
 namespace BrainGames\Games\Calc;
 
+use function BrainGames\Cli\run;
+
 const OPERATORS = ['+', '-', '*'];
-function game()
+function getData()
 {
         $index = rand(0, 2);
         $firstNum = rand(1, 100);
@@ -29,4 +31,10 @@ function game()
             'answer' => (string)$answer,
             'description' => 'What is the result of the expression?'
         ];
+}
+function game()
+{
+    return run(function () {
+        return getData();
+    });
 }
