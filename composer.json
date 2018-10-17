@@ -1,13 +1,14 @@
 {
     "name": "vilin/brain-games",
-    "version": "5.6.0",
+    "version": "6.2.0",
     "license": "MIT",
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-balance"
+        "bin/brain-balance",
+        "bin/brain-progression"
     ],
     "type": "project",
     "description": "set of cli games",
@@ -31,7 +32,8 @@
             "src/games/Even.php",
             "src/games/Calc.php",
             "src/games/Gcd.php",
-            "src/games/Balance.php"
+            "src/games/Balance.php",
+            "src/games/Progression.php"
         ]
     },
     "require": {

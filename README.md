@@ -12,3 +12,6 @@
 [Step 5](https://asciinema.org/a/PBpKgHFlFvJyeguVFSz8C9OgC)
 
 [Step 6](https://asciinema.org/a/bQi1L9m1Sl3bN9wk0P7jIuHTr)
+
+[Step 7](https://asciinema.org/a/mFLlOkICDSpGLZr2HTReiSBBk)
+

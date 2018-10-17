@@ -23,7 +23,7 @@ function getBalancedNum($num)
     $balancedArr = array_map(function ($item) use ($baseNum) {
         return (int)$item - (int)$item + $baseNum;
     }, $arr);
-    while ($restNum !== 0) {
+    if ($restNum > 0) {
         for ($i = 0; $i < $size; $i += 1) {
             $balancedArr[$i] += 1;
             $restNum -= 1;
