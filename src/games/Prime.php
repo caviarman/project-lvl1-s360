@@ -6,23 +6,17 @@ use function BrainGames\Cli\run;
 
 const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function iter($acc, $n)
-{
-    if ($acc > $n / 2) {
-        return true;
-    }
-    if ($n % $acc === 0) {
-        return false;
-    }
-    return iter($acc + 1, $n);
-}
-
 function isPrime($num)
 {
     if ($num < 2) {
         return false;
     }
-    return iter(2, $num);
+    for ($i = 2; $i <= $num / 2; $i++) {
+        if ($num % $i == 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 function getData()

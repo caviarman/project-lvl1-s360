@@ -12,7 +12,6 @@ function run($game, $description)
     line('Welcome to the Brain Game!');
     line("{$description}");
     $name = prompt('May I have your name?');
-    $count = 0;
     for ($i = 0; $i < ATTEMPTS; $i += 1) {
         ['question' => $question, 'answer' => $rightAnswer] = $game();
         $userAnswer = prompt("Question: {$question}");

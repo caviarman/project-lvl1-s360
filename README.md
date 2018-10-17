@@ -15,3 +15,6 @@
 
 [Step 7](https://asciinema.org/a/mFLlOkICDSpGLZr2HTReiSBBk)
 
+[Step 8]()
+
+[Step 9]()

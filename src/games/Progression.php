@@ -9,7 +9,7 @@ const SIZE = 10;
 
 function getData()
 {
-    $index = rand(0, 9);
+    $hiddenElementPosition = rand(0, SIZE - 1);
     $start = rand(1, 100);
     $step = rand(1, 100);
     $arr = [];
@@ -17,8 +17,8 @@ function getData()
         $arr[$i] = $start + ($step * $i);
         $start += $step;
     }
-    $answer = $arr[$index];
-    $arr[$index] = '..';
+    $answer = $arr[$hiddenElementPosition];
+    $arr[$hiddenElementPosition] = '..';
     $question = implode(' ', $arr);
     
     return [
