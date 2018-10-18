@@ -11,12 +11,16 @@ function isPrime($num)
     if ($num < 2) {
         return false;
     }
-    for ($i = 2; $i <= $num / 2; $i++) {
-        if ($num % $i == 0) {
+    $iter = function ($acc) use ($num, & $iter) {
+        if ($acc > $num / 2) {
+            return true;
+        }
+        if ($num % $acc === 0) {
             return false;
         }
-    }
-    return true;
+        return $iter($acc + 1);
+    };
+    return $iter(2);
 }
 
 function getData()
