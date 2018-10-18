@@ -15,7 +15,6 @@ function getData()
     $arr = [];
     for ($i = 0; $i < SIZE; $i += 1) {
         $arr[$i] = $start + ($step * $i);
-        $start += $step;
     }
     $answer = $arr[$hiddenElementPosition];
     $arr[$hiddenElementPosition] = '..';
